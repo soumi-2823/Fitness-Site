@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTO FITNESS</title>
+</head>
+<link href="https://fonts.google.com/share?selection.family=Alkatra" rel="preconnect">
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+    /* CSS Reset */
+    body{
+        font-family: 'Alkatra', cursive;    /* egulo sob google fonts theke copy kore ana font */
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/GYM_BACKGROUND.png');
+        background-repeat: no-repeat; 
+        background-size: 1790px 1100px;
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 30px;
+    }
+    .left img{
+        width: 150px;
+        /* filter: invert(100%); */
+        
+    }
+    .left div{
+        text-align: center;
+        line-height:20px;
+        font-size:23px;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 30px auto;
+        /* border: 2px solid green; */
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration:none;  /* underline hatate */
+        padding: 4px;
+    }
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color:white;
+        padding: 5px 12px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;    /* point korle hat asbe */
+        font-family: 'Alkatra', cursive;
+    }
+    .btn:hover{
+        background-color: rgb(75, 69, 69);
+    }
+    .container{
+        border:2px solid white;
+        margin: 145px 89px;
+        padding: 27px 50px;
+        width: 30%;
+        border-radius: 15px;
+        
+    }
+    .form-group input{
+        font-family: 'Alkatra', cursive; 
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 10px;
+        border:2px solid black;
+        margin: 9px auto;
+        border-radius: 34px;
+        font-size: 15px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+         <img src="img/GymLogo.jpg" alt="" class="src">
+         <div>MOTO FITNESS</div>   
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Garia now</h1>
+        <form action="noaction.php">
+            <!-- div.form.group -->
+            <div class="form-group">
+                <!-- input:text enter -->
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <!-- button.btn enter -->
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
